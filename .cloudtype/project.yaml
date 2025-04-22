@@ -1,0 +1,19 @@
+name: login
+app: node@22
+resources:
+  spot: true
+  memory: 0.5
+options:
+  env: []
+  buildenv: []
+context:
+  git:
+    url: https://github.com/Sondanha/task.git
+    branch: main
+
+build:
+  build_command: npm install
+  run_command: npm start
+
+deploy:
+  port: 3000
