@@ -1,5 +1,5 @@
 name: login
-app: node@22
+app: node@16
 resources:
   spot: true
   memory: 0.5
